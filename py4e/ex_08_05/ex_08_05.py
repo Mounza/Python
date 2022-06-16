@@ -8,7 +8,7 @@ for line in han:                                 # look through the file
         #continue                                # continue/skip it
     #Guardian in a compound statement
     if len(wds) < 3 or wds[0] != 'From' :        # check if there are less than 3 words or first word is not from (guardian must come first/right order else it will fail)
-        continue                                 # if its not skip the line
+        continue                                 # if it's not skip the line
     if line.startswith('From'):
         lines = lines + 1
     print(wds[1])                                # if we find a line that starts with From then print the 3rd word
